@@ -35,6 +35,13 @@ This is undesirable for a number of reasons:
 - As an admin, I did not opt into this behavior, and Connect usually isolates
   content / manages deployments for me / etc.
 - As a publisher, this error is very confusing and I have no way to remedy
+```
+2020/04/14 13:03:15.973098700 Error while loading Python API: Could not import
+module 'predict'. Connect expected to find a file in the application directory
+named 'predict.py'. Please check the entrypoint specified in the manifest.json
+file or on the rsconnect-python command line. Reason: No module named
+'sklearn'.
+```
 - Even figuring out "what" the issue is requires shell access on the server
 - As a publisher, I have no real recourse to remedy the issue other than try to
   intuit how I need to change / redeploy my content
