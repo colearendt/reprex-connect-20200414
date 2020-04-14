@@ -2,11 +2,6 @@
 
 ## Setup
 
-- Clone this repository locally [(with
-  submodules!)](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
-  ```git clone --recursive YOUR_GIT_URL```
-    - This is because of the `python-examples` directory,
-      which is managed in a separate repository
 - Install the [`connectapi`](https://github.com/rstudio/connectapi) package
 ```
 remotes::install_github("rstudio/connectapi")
