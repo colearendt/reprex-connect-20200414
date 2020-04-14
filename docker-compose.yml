@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  rstudio-connect:
+    image: rstudio/rstudio-connect:1.8.2-10
+    privileged: true
+    environment:
+      RSC_LICENSE: ${RSC_LICENSE}
+    ports:
+      - 3939:3939
+    volumes:
+      - ./rstudio-connect.gcfg:/etc/rstudio-connect/rstudio-connect.gcfg
+      - ./data:/data
